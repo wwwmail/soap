@@ -4,7 +4,7 @@ new Vue({
         this.fetchAllCars();
     },
     data: {
-        api: 'http://soap.test/task2/client/soapClient/',
+        api:  'http://192.168.0.15/~user4/php7/soap/task2/client/soapClient/',
         cars: [],
         search: {
             action: 'getSearchCars',

@@ -2,7 +2,7 @@
 
 class Client{
     
-	private $serverSoapUrl = 'http://soap.test/task2/server/wsdl';
+	private $serverSoapUrl = 'http://192.168.0.15/~user4/php7/soap/task2/server/wsdl?wsdl';
 	
 	private $data = array();
 	
@@ -34,24 +34,27 @@ class Client{
 			  $client = new SoapClient($this->serverSoapUrl);
 			  
 			switch ($this->data['action']) {
-				case 'getCars':
-					echo $client->getCars();
+            case 'getCars':
+ 
+					return $client->getCars();
 					break;
 				case 'getCarById':
-					echo $client->getCarById($this->data['id']);
+                   
+                    return $client->getCarById($this->data['id']);
 					break;
 				case 'getSearchCars':
 
-					echo  $client->getSearchCars($this->data['year'],$this->data['brand']);;
+					return  $client->getSearchCars($this->data['year'],$this->data['brand']);;
 					break;
 				case 'createOrder':
-					echo $client->createOrder( $this->data['auto_id'], $this->data['first_name'], $this->data['last_name'], $this->data['payment']);
+                   
+                    return $client->createOrder( $this->data['auto_id'], $this->data['first_name'], $this->data['last_name'], $this->data['payment']);
 					break;
 			}
 			  
 
 		}else{
-			echo 'net actions';
+			return json_encode(array('action'=>'not exist'));
 		}
 	}
 	

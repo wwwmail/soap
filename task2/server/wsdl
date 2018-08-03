@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://soap.test/task2/server/server.php" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Cars" targetNamespace="http://soap.test/task2/server/server.php">
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://192.168.0.15/~user4/php7/soap/task2/server/server.php" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Cars" targetNamespace="http://192.168.0.15/~user4/php7/soap/task2/server/server.php">
   <types>
-    <xsd:schema targetNamespace="http://soap.test/task2/server/server.php">
+    <xsd:schema targetNamespace="http://192.168.0.15/~user4/php7/soap/task2/server/server.php">
       <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
     </xsd:schema>
   </types>
@@ -26,45 +26,45 @@
   <binding name="CarsBinding" type="tns:CarsPort">
     <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
     <operation name="getCars">
-      <soap:operation soapAction="http://soap.test/task2/server/server.php#getCars"/>
+      <soap:operation soapAction="http://192.168.0.15/~user4/php7/soap/task2/server/server.php#getCars"/>
       <input>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://soap.test/task2/server/server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://192.168.0.15/~user4/php7/soap/task2/server/server.php"/>
       </input>
       <output>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://soap.test/task2/server/server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://192.168.0.15/~user4/php7/soap/task2/server/server.php"/>
       </output>
     </operation>
     <operation name="getCarById">
-      <soap:operation soapAction="http://soap.test/task2/server/server.php#getCarById"/>
+      <soap:operation soapAction="http://192.168.0.15/~user4/php7/soap/task2/server/server.php#getCarById"/>
       <input>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://soap.test/task2/server/server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://192.168.0.15/~user4/php7/soap/task2/server/server.php"/>
       </input>
       <output>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://soap.test/task2/server/server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://192.168.0.15/~user4/php7/soap/task2/server/server.php"/>
       </output>
     </operation>
     <operation name="getSearchCars">
-      <soap:operation soapAction="http://soap.test/task2/server/server.php#getSearchCars"/>
+      <soap:operation soapAction="http://192.168.0.15/~user4/php7/soap/task2/server/server.php#getSearchCars"/>
       <input>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://soap.test/task2/server/server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://192.168.0.15/~user4/php7/soap/task2/server/server.php"/>
       </input>
       <output>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://soap.test/task2/server/server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://192.168.0.15/~user4/php7/soap/task2/server/server.php"/>
       </output>
     </operation>
     <operation name="createOrder">
-      <soap:operation soapAction="http://soap.test/task2/server/server.php#createOrder"/>
+      <soap:operation soapAction="http://192.168.0.15/~user4/php7/soap/task2/server/server.php#createOrder"/>
       <input>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://soap.test/task2/server/server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://192.168.0.15/~user4/php7/soap/task2/server/server.php"/>
       </input>
       <output>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://soap.test/task2/server/server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://192.168.0.15/~user4/php7/soap/task2/server/server.php"/>
       </output>
     </operation>
   </binding>
   <service name="CarsService">
     <port name="CarsPort" binding="tns:CarsBinding">
-      <soap:address location="http://soap.test/task2/server/server.php"/>
+      <soap:address location="http://192.168.0.15/~user4/php7/soap/task2/server/server.php"/>
     </port>
   </service>
   <message name="getCarsIn"/>
